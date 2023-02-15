@@ -1,0 +1,49 @@
+* {
+  font-size: large;
+  margin: 0;
+}
+
+h4 {
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+
+input {
+  border-radius: 5px;
+  width: 26vw;
+  height: 2vw;
+  font-size: 1.5vw;
+  margin: 1vw;
+}
+
+button {
+  width: 18vw;
+  height: 2.5vw;
+  font-size: 1.3vw;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+label {
+  font-size: 1.7vw;
+}
+
+.entryCredentials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.welcome {
+  font-size: 5vw;
+  margin: 0;
+}
+
+img {
+  width: 40vw;
+  float: right;
+}
