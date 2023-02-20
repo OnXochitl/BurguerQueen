@@ -30,7 +30,7 @@ label {
   font-size: 1.7vw;
 }
 
-.entryCredentials {
+.entryCredentials, form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,12 +38,22 @@ label {
   height: 100vh;
 }
 
+img {
+  width: 40vw;
+}
+
+form {
+  height: auto;
+}
+
 .welcome {
   font-size: 5vw;
   margin: 0;
 }
 
-img {
-  width: 40vw;
-  float: right;
+
+.input-error {
+  color: red;
+  margin-bottom: 1vw;
+  font-size: 2.5vh;
 }
