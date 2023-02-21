@@ -13,9 +13,10 @@
     <input type="password" name="password" formControlName="password" required>
     <div *ngIf="contactForm.get('password')?.touched && contactForm.get('password')?.errors?.['required']" class="input-error">This field is required</div>
     <div *ngIf="contactForm.get('password')?.touched && contactForm.get('password')?.errors?.['minlength']" class="input-error">Password must be at least 6 characters long.</div>
-    <a><button type="submit" [disabled]="contactForm.invalid" >Login</button></a>
+    <a><button (click)="logInUser()" type="submit" [disabled]="contactForm.invalid">Login</button></a>
+    <div *ngIf="" class="input-error"> Please, fill the fields </div>
   </form>
 </div>
 
-
+<!-- [routerLink]="['/home']" -->
 <!-- (click)="logInUser()" -->

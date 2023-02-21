@@ -1,0 +1,32 @@
+{
+  "auth": [
+    {
+      "id": "1",
+      "email": "waiterxa@bq.com",
+      "password": "123456xa",
+      "role": "waiter",
+      "token": "validToken"
+    },
+    {
+      "id": "2",
+      "email": "waitercr@bq.com",
+      "password": "123456cr",
+      "role": "waiter",
+      "token": "validToken"
+    },
+    {
+      "id": "3",
+      "email": "waiterif@bq.com",
+      "password": "123456nh",
+      "role": "waiter",
+      "token": "validToken"
+    },
+    {
+      "id": "4",
+      "email": "waiterkr@bq.com",
+      "password": "123456kr",
+      "role": "waiter",
+      "token": "validToken"
+    }
+  ]
+}

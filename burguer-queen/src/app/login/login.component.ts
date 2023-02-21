@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AuthService, AuthToken } from '../auth.service';
 
 @Component({
@@ -10,7 +11,11 @@ import { AuthService, AuthToken } from '../auth.service';
 export class LoginComponent implements OnInit {
   contactForm!: FormGroup;
 
-  constructor(private readonly fb: FormBuilder) {}
+  constructor(
+    private readonly fb: FormBuilder,
+    private authService: AuthService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.contactForm = this.initForm();
@@ -22,12 +27,13 @@ export class LoginComponent implements OnInit {
       password: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(15)]]
     })
   }
-  // userEmailControl = new FormGroup('');
-  // constructor(private authService: AuthService) {}
-  
-  // logInUser() {
-  //   this.authService.authUser("", "").subscribe((token: AuthToken) => {
-  //     console.log(token);
-  //   });
-  // }
+
+  logInUser() {
+    const { email, password } = this.contactForm.value;
+    this.authService.authUser(email, password).subscribe((token: AuthToken[]) => {
+      if(token.length === 1) {
+        this.router.navigate(['/home']);
+      }
+    });
+  }
 }
