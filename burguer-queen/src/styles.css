@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Pacifico', cursive;
+  src: url('./assets/Fonts/Pacifico-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Sacramento', cursive;
+  src: url('./assets/Fonts/Sacramento-Regular.ttf');
+}

@@ -1,0 +1,24 @@
+{
+  "breakfast": [
+    {
+      "breakfast": "1",
+      "name": "American Coffee",
+      "price": "S/. 5.00"
+    },
+    {
+      "breakfast": "2",
+      "name": "Coffee with milk",
+      "price": "S/. 7.00"
+    },
+    {
+      "breakfast": "3",
+      "name": "Ham and cheese sandwich",
+      "price": "S/. 10.00"
+    },
+    {
+      "breakfast": "4",
+      "name": "Natural Juice",
+      "price": "S/. 7.00"
+    }
+  ]
+}

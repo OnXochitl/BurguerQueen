@@ -13,7 +13,8 @@ input {
   width: 26vw;
   height: 2vw;
   font-size: 1.5vw;
-  margin: 1vw;
+  font-weight: bold;
+  margin: 0.5vh;
 }
 
 button {
@@ -24,6 +25,7 @@ button {
   background-color: black;
   color: white;
   font-weight: bold;
+  margin-top: 1vh;
 }
 
 label {
@@ -36,6 +38,8 @@ label {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: url('../../assets/Images/Welcome_to__5_-removebg-preview.png');
+  background-attachment: fixed;
 }
 
 img {
@@ -44,16 +48,17 @@ img {
 
 form {
   height: auto;
+  background-image: none;
 }
 
 .welcome {
-  font-size: 5vw;
-  margin: 0;
+  font-size: 4vw;
 }
 
 
 .input-error {
   color: red;
   margin-bottom: 1vw;
-  font-size: 2.5vh;
+  font-size: 3vh;
+  font-weight: bold;
 }

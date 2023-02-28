@@ -4,6 +4,7 @@
       "id": "1",
       "email": "waiterxa@bq.com",
       "password": "123456xa",
+      "name": "Xochitl",
       "role": "waiter",
       "token": "validToken"
     },
@@ -11,6 +12,7 @@
       "id": "2",
       "email": "waitercr@bq.com",
       "password": "123456cr",
+      "name": "Christian",
       "role": "waiter",
       "token": "validToken"
     },
@@ -18,6 +20,7 @@
       "id": "3",
       "email": "waiterif@bq.com",
       "password": "123456nh",
+      "name": "Nicole",
       "role": "waiter",
       "token": "validToken"
     },
@@ -25,7 +28,24 @@
       "id": "4",
       "email": "waiterkr@bq.com",
       "password": "123456kr",
+      "name": "Kei",
       "role": "waiter",
+      "token": "validToken"
+    },
+    {
+      "id": "5",
+      "email": "chefcl@bq.com",
+      "password": "123456cl",
+      "name": "Carlos",
+      "role": "chef",
+      "token": "validToken"
+    },
+    {
+      "id": "6",
+      "email": "chefif@bq.com",
+      "password": "123456if",
+      "name": "Ivy",
+      "role": "chef",
       "token": "validToken"
     }
   ]

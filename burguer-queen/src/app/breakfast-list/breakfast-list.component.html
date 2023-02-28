@@ -1,0 +1,14 @@
+<h2 class="breakfast_title">Breakfast</h2>
+
+<div class="breakfastList">
+  <button *ngFor="let breakfast of breakfast">
+    <h3>
+      <p class="breakfastName" [title]="breakfast.name + ' details'">
+        {{ breakfast.name }}
+      </p>
+      <p class="breakfastPrice">
+        S/. {{ breakfast.price }}.00
+      </p>
+
+    </h3>
+ 

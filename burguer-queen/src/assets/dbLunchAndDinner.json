@@ -1,0 +1,44 @@
+{
+  "LunchAndDinner": [
+    {
+      "Lunch": "1",
+      "name": "Simple burger",
+      "price": "S/. 10.00"
+    },
+    {
+      "Lunch": "2",
+      "name": "Double burger",
+      "price": "S/. 15.00"
+    },
+    {
+      "Lunch": "3",
+      "name": "French Fries",
+      "price": "S/. 5.00"
+    },
+    {
+      "Lunch": "4",
+      "name": "Onion Rings",
+      "price": "S/. 5.00"
+    },
+    {
+      "Lunch": "5",
+      "name": "Water 500ml",
+      "price": "S/. 5.00"
+    },
+    {
+      "Lunch": "6",
+      "name": "Water 750ml",
+      "price": "S/. 7.00"
+    },
+    {
+      "Lunch": "7",
+      "name": "Soda 500ml",
+      "price": "S/. 7.00"
+    },
+    {
+      "Lunch": "8",
+      "name": "Soda 500ml",
+      "price": "S/. 10.00"
+    }
+  ]
+}

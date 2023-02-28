@@ -1,0 +1,9 @@
+.breakfast_title {
+  color: red;
+}
+
+.breakfastList {
+  display: flex;
+  justify-content:space-evenly;
+}
+

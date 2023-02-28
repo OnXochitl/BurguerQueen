@@ -31,8 +31,9 @@ export class LoginComponent implements OnInit {
   logInUser() {
     const { email, password } = this.contactForm.value;
     this.authService.authUser(email, password).subscribe((token: AuthToken[]) => {
-      if(token.length === 1) {
+      if (token.length === 1) {
         this.router.navigate(['/home']);
+        console.log(token[0].token);
       }
     });
   }
