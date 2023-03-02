@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { breakfast } from '../breakfastList';
+import { lunchAndDinner } from '../lunchAndDinnerList';
 
 @Component({
   selector: 'app-breakfast-list',
@@ -7,5 +8,24 @@ import { breakfast } from '../breakfastList';
   styleUrls: ['./breakfast-list.component.css']
 })
 export class BreakfastListComponent {
-  breakfast = breakfast;
+  breakfasts = breakfast;
+  lunchAndDinner = lunchAndDinner;
+
+  clickMenu = false;
+
+  showMenu() {
+    return (this.clickMenu = true);
+  }
+
+  hideMenu() {
+    return (this.clickMenu = false);
+  }
+
+  buttonMenuBreakfast(breakfast: any) {
+    return breakfast.price;
+  }
+
+  buttonMenuLuchAndDinner(lunchAndDinner: any) {
+    return console.log(lunchAndDinner.price);
+  }
 }

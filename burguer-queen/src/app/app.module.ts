@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BreakfastListComponent } from './breakfast-list/breakfast-list.component';
-import { LunchAndDinnerListComponent } from './lunch-and-dinner-list/lunch-and-dinner-list.component';
+import { TotalCountComponent } from './total-count/total-count.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { LunchAndDinnerListComponent } from './lunch-and-dinner-list/lunch-and-d
     HomeComponent,
     LoginComponent,
     BreakfastListComponent,
-    LunchAndDinnerListComponent
+    TotalCountComponent,
   ],
   imports: [
     BrowserModule,

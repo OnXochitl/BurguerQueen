@@ -1,0 +1,13 @@
+.containerCount {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  width: 40vw;
+}
+
+.title_count {
+  
+}
+
+

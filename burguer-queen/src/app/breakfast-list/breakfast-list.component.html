@@ -1,14 +1,30 @@
-<h2 class="breakfast_title">Breakfast</h2>
+<div class="menuContainer">
+  <p>  </p>
+  <div class="menuTitles">
+    <h2 class="breakfast_title" (click)="showMenu()" (click)="hideMenu()">Breakfast</h2>
+    <h2 class="lunchAndDinner_title" (click)="showMenu()">Lunch and Dinner</h2>
+  </div>
 
-<div class="breakfastList">
-  <button *ngFor="let breakfast of breakfast">
-    <h3>
-      <p class="breakfastName" [title]="breakfast.name + ' details'">
-        {{ breakfast.name }}
-      </p>
-      <p class="breakfastPrice">
-        S/. {{ breakfast.price }}.00
-      </p>
+  <div id="breakfastList" class="menuList" *ngIf="clickMenu == false">
+    <button class="buttonMenu" (click)="buttonMenuBreakfast(breakfast)" *ngFor="let breakfast of breakfasts">
+      <h3>
+        <p class="breakfastName" [title]="breakfast.name + ' details'">
+          {{ breakfast.name }}
+        </p>
+        <p class="breakfastPrice">
+          S/. {{ breakfast.price }}.00
+        </p>
 
-    </h3>
- 
+      </h3>
+    </button>
+  </div>
+
+
+  <div id="lunchAndDinnerList" class="menuList" *ngIf="clickMenu == true">
+    <button class="buttonMenu" (click)="buttonMenuLuchAndDinner(lunchAndDinner)" *ngFor="let lunchAndDinner of lunchAndDinner">
+      <h3>
+        <a [title]="lunchAndDinner.name + ' details'">
+          {{ lunchAndDinner.name }}
+          S/. {{ lunchAndDinner.price }}.00
+        </a>
+      </h3>

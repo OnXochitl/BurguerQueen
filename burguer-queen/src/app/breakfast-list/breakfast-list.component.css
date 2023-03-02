@@ -1,9 +1,29 @@
-.breakfast_title {
-  color: red;
+.menuContainer {
+  position: absolute;
+  left: 0;
+  height: 40vh;
+  width: 60vw;
 }
 
-.breakfastList {
+.breakfast_title, .lunchAndDinner_title {
+  color: red;
+  display: flex;
+  font-weight: bold;
+  margin: 2vw;
+}
+
+.menuTitles {
+  display: flex;
+}
+
+.buttonMenu {
+  margin: 2vh;
+}
+
+.menuList {
   display: flex;
   justify-content:space-evenly;
+  flex-wrap: wrap;
 }
+
 
